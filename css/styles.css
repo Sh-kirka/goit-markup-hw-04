@@ -70,7 +70,6 @@ p {
 .header-mail {
   margin-right: 50px;
 }
-
 .navigation {
   display: flex;
   align-items: center;
@@ -117,7 +116,7 @@ p {
 display: block;
 content:"";
 position: absolute;
-width: 100%;
+width: 50px;
 height: 0px;
 background:var(--accent-color);
 border-radius: 2px;
@@ -142,13 +141,9 @@ margin-right: auto;
   justify-content: center;
 }
 .header-mail-svg {
-  width: 16px;
-  height: 11.2px;
   margin-right: 10px;
 }
 .header-tel-svg {
-  width: 10px;
-  height: 14.94px;
   margin-right: 10px;
 }
 .header-address:hover .header-mail-svg {
@@ -172,7 +167,6 @@ fill: var(--accent-color) ;
   color: var(--primary-white-color);
   margin-bottom: 30px;
   padding-top: 200px;
-
 }
 .modal-button {
   color: var(--primary-white-color);
@@ -200,6 +194,8 @@ fill: var(--accent-color) ;
   height: 600px;
   background-image: linear-gradient( to bottom, rgba(47, 48, 58, 0.8), rgba(47, 48, 58, 0.8) ), url("../images/main/Header.jpg");
   background-repeat: no-repeat;
+  margin-left: auto;
+  margin-right: auto;
 }
 /*О НАС*/
 .about-us-list {
@@ -289,9 +285,6 @@ fill: var(--accent-color) ;
 .whatawedoing-item:not(:last-child) {
   margin-right: 30px;
 }
-
-
-}
 /* Наша команда  */
 .grey-section {
   background: #f5f4fa;
@@ -372,8 +365,21 @@ fill: var(--accent-color) ;
 .cliernt-list-item {
   width: 170px;
   height: 90px;
+  display: flex;
   justify-content: center;
   align-items: center;
+  border: 1px solid #AFB1B8;
+  box-sizing: border-box;
+  border-radius: 4px;
+}
+.cliernt-list-item:hover {
+  border-color: var(--accent-color);
+}
+.cliernt-list-item:hover .cliernt-list-item-svg {
+fill: var(--accent-color) ;
+}
+.cliernt-list-item-svg {
+  fill: #AFB1B8;;
 }
 .cliernt-list {
   padding-top: 50px;
@@ -453,6 +459,12 @@ fill: var(--accent-color) ;
   background: var(--accent-color);
 }
 .social-list-item-link:hover .social-list-item-link-svg {
+fill: white ;
+}
+.join .social-list-item-link:focus {
+  background: var(--accent-color);
+}
+.social-list-item-link:focus .social-list-item-link-svg {
 fill: white ;
 }
 /* Портфолио */
