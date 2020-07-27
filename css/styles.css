@@ -139,11 +139,12 @@ margin-right: auto;
   color: var(--primary-text-color);
   align-items: center;
   justify-content: center;
+  display: flex;
 }
 .header-mail-svg,
 .header-tel-svg  {
   display: flex;
-    align-items: center;
+  align-items: center;
   justify-content: center;
   margin-right: 10px;
   fill: var(--primary-text-color) ;
