@@ -140,11 +140,13 @@ margin-right: auto;
   align-items: center;
   justify-content: center;
 }
-.header-mail-svg {
+.header-mail-svg,
+.header-tel-svg  {
+  display: flex;
+    align-items: center;
+  justify-content: center;
   margin-right: 10px;
-}
-.header-tel-svg {
-  margin-right: 10px;
+  fill: var(--primary-text-color) ;
 }
 .header-address:hover .header-mail-svg {
 fill: var(--accent-color) ;
